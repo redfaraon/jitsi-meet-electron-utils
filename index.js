@@ -1,4 +1,8 @@
 const RemoteControl = require('./remotecontrol');
+const {
+  setupGoogleApiForWindow,
+  setupGoogleApiWindowOpener
+} = require('./googleapi');
 const setupScreenSharingForWindow = require('./screensharing');
 const {
     setupAlwaysOnTopRender,
@@ -9,6 +13,8 @@ const { getWiFiStats, setupWiFiStats } = require('./wifistats');
 module.exports = {
     getWiFiStats,
     RemoteControl,
+    setupGoogleApiForWindow,
+    setupGoogleApiWindowOpener,
     setupScreenSharingForWindow,
     setupAlwaysOnTopRender,
     setupAlwaysOnTopMain,
