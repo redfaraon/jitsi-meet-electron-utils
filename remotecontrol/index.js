@@ -184,10 +184,10 @@ class RemoteControl {
             }
             case EVENTS.keydown:
             case EVENTS.keyup: {
-                robot.keyToggle(
+               /* robot.keyToggle(
                     data.key,
                     KEY_ACTIONS_FROM_EVENT_TYPE[data.type],
-                    data.modifiers);
+                 */   data.modifiers);
                 break;
             }
             case REQUESTS.start: {
